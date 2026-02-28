@@ -1,7 +1,7 @@
 resource "aws_route53_record" "www" {
   count = 10
   zone_id = var.zone_id
-  # interpolation
+  # interpolation 
   name    = "${var.instances[count.index]}.${var.domain_name}" # mongodb.virtualmall.store
   type    = "A"
   ttl     = 1
