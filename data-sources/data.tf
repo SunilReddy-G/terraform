@@ -18,11 +18,11 @@ data "aws_ami" "joindevops"{
   }
 }
 
-data "aws_instances" "terraform_instance" {
-  instance_state_names = ["running"]
+# data "aws_instances" "terraform_instance" {
+#   instance_state_names = ["running"]
 
-  filter {
-    name = "instance-ids"
-    values = ["sg-12345678"]
-  }
-}
+#   filter {
+#     name = "instance-ids"
+#     values = ["sg-12345678"] # existing instance number need to provide
+#   }
+# }
