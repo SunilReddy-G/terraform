@@ -1,4 +1,4 @@
-data "aws_ami" "joindevops"{
+data "aws_ami" "alstom"{
   executable_users = ["self"]
   most_recent      = true
 
