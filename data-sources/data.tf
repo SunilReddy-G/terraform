@@ -1,4 +1,4 @@
-data "aws_ami" "alstom"{
+data "aws_ami" "hema"{
   executable_users = ["self"]
   most_recent      = true
 
