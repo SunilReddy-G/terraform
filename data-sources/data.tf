@@ -3,8 +3,8 @@ data "aws_ami" "hema"{
   most_recent      = true
 
   filter {
-    name   = "name"
-    values = ["Redhat-9-DevOps-Practice"]
+    name   = "owner-account-id"
+    values = ["973714476881"]
   }
 
   filter {
